@@ -1,0 +1,20 @@
+CREATE TABLE Zoo (id integer primary key, name text, rating integer);
+
+INSERT INTO Zoo VALUES
+(1, 'Monkeys', 4),
+(2, 'Gorillas', 7),
+(3, 'Elephant', 5),
+(4, 'Lion', 6),
+(5, 'Llamas', 1),
+(6, 'Giraffes', 2),
+(7, 'Goats', 9), 
+(8, 'Birds', 8), 
+(9, 'Penguins', 3);
+
+SELECT * FROM Zoo ORDER BY rating;
+SELECT * FROM Zoo WHERE rating < 3 ORDER BY rating;
+SELECT SUM(rating) FROM Zoo;
+SELECT MAX(rating) FROM Zoo;
+SELECT AVG(rating) FROM Zoo;
+
+
